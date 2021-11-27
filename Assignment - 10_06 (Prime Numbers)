@@ -1,0 +1,14 @@
+num = int(input("enter a number: "))
+prime_list= []
+sayi = 0
+
+while sayi <= num:
+  for i in range(2,num):
+    for k in range (2, i):
+        if i % k == 0 :
+          break
+    else:
+      prime_list.append(i)
+      sayi += 1 
+  print(prime_list)
+  break  
